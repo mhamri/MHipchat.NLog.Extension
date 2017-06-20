@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable",
+    "emitEntryPoint": true,
+    "copyToOutput": {
+      "includeFiles": [
+        "nlog.config"
+      ],
+      "mappings": {
+        "MHipchat.NLogCore.Extension.dll": "../MHipchat.NLogCore.Extension/bin/Debug/netstandard1.6/MHipchat.NLogCore.Extension.dll",
+        "MHipchat.NLogCore.Extension.pdb": "../MHipchat.NLogCore.Extension/bin/Debug/netstandard1.6/MHipchat.NLogCore.Extension.pdp"
+      }
+    }
+  },
+
+  "dependencies": {
+    "Microsoft.Extensions.Logging": "1.1.2",
+    "Microsoft.Extensions.Logging.Debug": "1.1.2",
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.1"
+    },
+    "NLog": "5.0.0-beta08",
+    "NLog.Extensions.Logging": "1.0.0-rtm-beta5"
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    }
+  }
+}
